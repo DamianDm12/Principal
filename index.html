@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Web Profesional Freelance</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Ventana flotante con video de Kirby (sin audio, sobre todo, con X para cerrar) -->
+    <div class="kirby-float" id="kirbyFloat">
+        <video src="kirbyy.mp4" autoplay loop muted playsinline class="kirby-video"></video>
+        <button class="kirby-close" id="kirbyClose">&times;</button>
+    </div>
+
+    <!-- Icono flotante de audio -->
+    <button id="audioToggle" class="audio-toggle-btn" title="Reproducir/Detener música">
+        <i id="audioIcon" class="fas fa-volume-up"></i>
+    </button>
+    <!-- Audio de Beethoven -->
+    <audio id="beethovenAudio" src="beethoven-moonlight-sonata-1-movement-op-27-nr-2-180627.mp3" loop></audio>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/541127075560?text=Hola%20buen%20día,%20me%20contacto%20contigo%20desde%20tu%20web." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <header class="hero" id="inicio">
+        <nav class="navbar">
+            <div class="logo">
+                <video class="logo-video" src="videogalaxia.mp4" autoplay loop muted playsinline></video>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#mas-proyectos">Proyectos</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-left-background-video-container">
+            <video src="dragon.mp4" autoplay loop muted playsinline class="hero-background-video"></video>
+        </div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">DAMIAN</h1>
+            <p class="hero-subtitle">DISEÑADOR WEB FREELANCE</p>
+            <a href="#contacto" class="btn-primary">¡HABLEMOS DE TU PROYECTO!</a>
+        </div>
+    </header>
+
+    <section id="sobre-mi" class="section about-me">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <p>Mi viaje en el diseño web es un proceso constante de exploración y evolución. Cada proyecto es una oportunidad para aprender, crecer y superar mis propios límites creativos y técnicos.</p>
+            <p>Actualmente, estoy enfocada/o en expandir mi experiencia y mis conocimientos en el desarrollo web, abrazando cada desafío para ofrecer soluciones digitales cada vez más robustas e impactantes. Si bien estoy en esta etapa de <strong>crecimiento y consolidación</strong>, mi compromiso con la calidad, la creatividad audaz y la funcionalidad es inquebrantable.</p>
+            <p>Mi pasión es fusionar la estética vanguardista con la usabilidad estratégica. Estoy aquí para tomar tus ideas, por audaces que sean, y transformarlas en una presencia online que no solo destaque, sino que resuene. ¡Acompáñame en este camino y construyamos algo increíble juntos!</p>
+        </div>
+    </section>
+    <section id="servicios" class="section services">
+        <div class="container">
+            <h2 class="section-title">Mis Servicios</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Diseño Web Personalizado</h3>
+                    <p>Webs únicas y vanguardistas que reflejan tu identidad, construidas desde cero.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Webs Responsivas</h3>
+                    <p>Experiencias impecables en cualquier dispositivo: móvil, tablet o desktop.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Optimización SEO Básica</h3>
+                    <p>Ayudamos a que tu proyecto sea más fácil de encontrar en los buscadores.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Integración de Funcionalidades</h3>
+                    <p>Desde galerías interactivas hasta formularios y sistemas a medida.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Mantenimiento & Soporte</h3>
+                    <p>Para que tu web siempre esté al día, segura y funcionando sin problemas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos (pegada antes del contacto) -->
+    <section class="section">
+        <h1 class="section-title" id="mas-proyectos">Proyectos</h1>
+        <div class="proyectos-grid">
+            <a class="proyecto-item" href="https://damiandm12.github.io/mi-portafolio/" target="_blank">
+                <h3>Tienda1t</h3>
+                <p>Accede directamente al sitio web de tienda1.</p>
+            </a>
+            
+        </div>
+    </section>
+
+    <section id="contacto" class="section contact">
+        <div class="container">
+            <h2 class="section-title">¡Conectemos!</h2>
+            <p>¿Listo para llevar tu proyecto al siguiente nivel? Cuéntame sobre tus ideas y cómo puedo ayudarte a materializarlas. Estoy aquí para escucharte y construir la solución perfecta para ti.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Tu Nombre" required>
+                <input type="email" placeholder="Tu Correo Electrónico" required>
+                <textarea placeholder="Cuéntame sobre tu proyecto..." rows="5" required></textarea>
+                <button type="submit" class="btn-primary">Enviar Mensaje</button>
+            </form>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:kyo.anthara@gmail.com">kyo.anthara@gmail.com</a></p>
+                <p>Teléfono: +541127075560</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Tu Nombre o Marca. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>
